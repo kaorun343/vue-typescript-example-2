@@ -4,5 +4,11 @@ import * as template from './Links.template.html'
 
 @Component(template({}))
 export default class Links extends Vue {
-  links = []
+  links = [
+    { title: 'vue.js', href: 'https://jp.vuejs.org' },
+    { title: 'TypeScript - JavaScript that scales.', href: 'http://www.typescriptlang.org' },
+    { title: 'Vue.js Advent Calendar 2016 - Qiita', href: 'http://qiita.com/advent-calendar/2016/vue' },
+    { title: 'TVアニメ「ご注文はうさぎですか？？」公式サイト', href: 'http://www.gochiusa.com' },
+    { title: 'ご注文はうさぎですか? - Wikipedia', href: 'https://ja.wikipedia.org/wiki/ご注文はうさぎですか%3F' }
+  ]
 }

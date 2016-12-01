@@ -1,1 +1,8 @@
-<div></div>
+<div class="container">
+  <h1>リンク一覧</h1>
+  <ul>
+    <li v-for="link in links">
+      <a :href="link.href">{{ link.title }}</a>
+    </li>
+  </ul>
+</div>
