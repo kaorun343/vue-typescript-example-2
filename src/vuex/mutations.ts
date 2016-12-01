@@ -4,7 +4,7 @@ import * as types from './types'
 
 export default {
   [types.STORE_MESSAGE](state, message) {
-    state.messages.push(message)
+    state.messages.unshift(message)
   },
   [types.SET_MESSAGES](state, messages) {
     state.messages = messages
