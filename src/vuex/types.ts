@@ -1,0 +1,2 @@
+export const STORE_MESSAGE = 'STORE_MESSAGE'
+export const SET_MESSAGES = 'SET_MESSAGES'
