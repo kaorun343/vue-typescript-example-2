@@ -1,0 +1,12 @@
+<div>
+  <jumbotron></jumbotron>
+  <div class="container">
+    <h2>これまでに寄せられたメッセージ</h2>
+    <div class="card card-block" v-for="massage in messages">
+      <div>{{ message.date }}</div>
+      <h4>{{ message.title }}</h4>
+      <p class="card-text">{{ message.message }}</p>
+    </div>
+  </div>
+  <router-view></router-view>
+</div>

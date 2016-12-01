@@ -1,0 +1,17 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Happy Birthday!!</h1>
+    <p class="lead">12月4日は香風智乃の誕生日です。</p>
+    <hr class="my-2">
+    <p>
+      <span v-if="!isBirthday">今日は{{ today }}ですが</span>
+      <span v-else>今日は{{ today }}、誕生日当日です！！</span>
+      <span>メッセージを書いてみましょう！</span>
+    </p>
+    <p class="lead">
+      <router-link class="btn btn-primary btn-lg" :to="{ name: 'new' }" role="button">
+        メッセージを書く
+      </router-link>
+    </p>
+  </div>
+</div>
