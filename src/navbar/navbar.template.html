@@ -1,15 +1,15 @@
 <nav class="navbar navbar-light bg-faded">
   <router-link class="navbar-brand" :to="{name: 'home'}">
     Vue.jsとTypeScriptのサンプル2
-    </router-link>
+  </router-link>
   <ul class="nav navbar-nav">
-    <router-link tag="li" :to="{name: 'home'}" class="nav-item">
+    <router-link tag="li" :to="{name: 'home'}" :exact="true" active-class="active" class="nav-item">
       <a class="nav-link">ホーム</a>
     </router-link>
-    <router-link tag="li" :to="'/links'" class="nav-item">
+    <router-link tag="li" :to="{name: 'links'}" active-class="active" class="nav-item">
       <a class="nav-link">リンク一覧</a>
     </router-link>
-    <router-link tag="li" :to="'/settings'" class="nav-item">
+    <router-link tag="li" :to="{name: 'settings'}" active-class="active" class="nav-item">
       <a class="nav-link">設定</a>
     </router-link>
   </ul>

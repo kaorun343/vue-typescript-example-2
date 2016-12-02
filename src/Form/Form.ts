@@ -29,6 +29,6 @@ export default class Form extends Vue {
   }
 
   cancel() {
-    this.$router.back()
+    this.$router.push({ name: 'home' })
   }
 }
