@@ -1,6 +1,11 @@
-<div class="container page-container">
-  <h1>設定</h1>
-  <div>
-    <button class="btn btn-primary" @click="reset">メッセージを削除する</button>
+<div>
+  <div class="container page-container">
+    <h1>設定</h1>
+    <div>
+      <button class="btn btn-primary" @click="reset">メッセージを削除する</button>
+    </div>
+  </div>
+  <div class="container page-container">
+    <alert @close="close" type="success" :message="message" v-if="alert"></alert>
   </div>
 </div>

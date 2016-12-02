@@ -16,6 +16,7 @@
   background-color: darken($body-bg, 3%);
 }
 
+@import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/card";
 @import "~bootstrap/scss/close";
