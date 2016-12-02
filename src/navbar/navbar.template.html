@@ -3,14 +3,8 @@
     Vue.jsとTypeScriptのサンプル2
   </router-link>
   <ul class="nav navbar-nav">
-    <router-link tag="li" :to="{name: 'home'}" :exact="true" active-class="active" class="nav-item">
-      <a class="nav-link">ホーム</a>
-    </router-link>
-    <router-link tag="li" :to="{name: 'links'}" active-class="active" class="nav-item">
-      <a class="nav-link">リンク一覧</a>
-    </router-link>
-    <router-link tag="li" :to="{name: 'settings'}" active-class="active" class="nav-item">
-      <a class="nav-link">設定</a>
+    <router-link tag="li" v-for="link in links" active-class="active" class="nav-item" :to="{ name: link.name }" :exact="true">
+      <a class="nav-link">{{ link.title }}</a>
     </router-link>
   </ul>
 </nav>
