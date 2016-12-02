@@ -5,6 +5,7 @@ import router from './router'
 import { mapActions } from 'vuex'
 import store from './vuex/store'
 import Navbar from './navbar/navbar'
+import './style.scss'
 
 @Component(template<App>({
   components: {
