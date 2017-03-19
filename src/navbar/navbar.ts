@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import * as template from './navbar.template.html'
+import * as Template from './navbar.html'
 
-@Component(template({}))
+@Template
+@Component
 export default class Navbar extends Vue {
   links = [
     { title: 'ホーム', name: 'home' },

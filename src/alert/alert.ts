@@ -1,14 +1,14 @@
 import Vue from 'vue'
-import { Component, prop } from 'vue-property-decorator'
-import * as template from './alert.template.html'
+import Component from 'vue-class-component'
+import { Prop } from 'vue-property-decorator'
+import * as Template from './alert.html'
 
-@Component(template({}))
+@Template
+@Component
 export default class Alert extends Vue {
-  @prop({ type: null })
-  type: string
+  @Prop readonly type: string
 
-  @prop({ type: null })
-  message: string
+  @Prop readonly message: string
 
   get alertType() {
     return `alert-${this.type}`

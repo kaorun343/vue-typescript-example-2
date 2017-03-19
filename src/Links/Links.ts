@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import * as template from './Links.template.html'
+import * as Template from './Links.html'
 
-@Component(template({}))
+@Template
+@Component
 export default class Links extends Vue {
   links = [
     { title: 'vue.js', href: 'https://jp.vuejs.org' },

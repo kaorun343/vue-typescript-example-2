@@ -1,8 +1,9 @@
 declare module '*.html' {
-  import Vue from 'vue'
-  import { ComponentOptions } from 'vue'
-
-  var template: <V extends Vue>(options: ComponentOptions<V>) => ComponentOptions<V>
-
-  export = template
+  import Vue = require('vue')
+  interface WithRender {
+    <V extends Vue>(options: Vue.ComponentOptions<V>): Vue.ComponentOptions<V>
+    <V extends typeof Vue>(component: V): V
+  }
+  const withRender: WithRender
+  export = withRender
 }

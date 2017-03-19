@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import * as template from './jumbotron.template.html'
+
+import * as Template from './jumbotron.html'
 import { zero } from '../util'
 
 function format(y: number, m: number, d: number) {
@@ -12,7 +13,8 @@ const year = today.getFullYear()
 const month = today.getMonth() + 1
 const date = today.getDate()
 
-@Component(template<Jumbotron>({}))
+@Template
+@Component
 export default class Jumbotron extends Vue {
   today = format(year, month, date)
 

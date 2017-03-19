@@ -1,13 +1,15 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import * as template from './index.template.html'
-import router from './router'
 import { mapActions } from 'vuex'
+
+import * as Template from './index.html'
+import router from './router'
 import store from './vuex/store'
 import Navbar from './navbar/navbar'
 import './style.scss'
 
-@Component(template<App>({
+@Template
+@Component<App>({
   components: {
     Navbar
   },
@@ -17,7 +19,7 @@ import './style.scss'
   mounted() {
     this.setMessages()
   }
-}))
+})
 class App extends Vue {
   setMessages: () => Promise<void>
 }

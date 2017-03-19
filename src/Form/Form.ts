@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import * as template from './Form.template.html'
-import Modal from '../modal/modal'
-import { mapActions } from 'vuex'
 
-@Component(template<Form>({
+import * as Template from './Form.html'
+import Modal from '../modal/modal'
+import { Action } from 'vuex-class'
+
+@Template
+@Component<Form>({
   components: {
     Modal
   },
@@ -13,14 +15,13 @@ import { mapActions } from 'vuex'
       vm.title = ''
       vm.body = ''
     })
-  },
-  methods: mapActions(['storeMessage'])
-}))
+  }
+})
 export default class Form extends Vue {
   title = ''
   body = ''
 
-  storeMessage: (message: any) => Promise<void>
+  @Action readonly storeMessage: (message: any) => Promise<void>
 
   save() {
     this.storeMessage({ title: this.title, body: this.body }).then(() => {

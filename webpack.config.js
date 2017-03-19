@@ -11,7 +11,7 @@ module.exports = {
     loaders: [
       { test: /\.tsx?$/, loader: 'ts-loader' },
       { test: /\.scss$/, loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']) },
-      { test: /\.template\.html$/, loader: 'vue-template-loader' }
+      { test: /\.html$/, loader: 'vue-template-loader', include: /src/ }
     ]
   },
   resolve: {

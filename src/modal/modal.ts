@@ -1,11 +1,13 @@
 import Vue from 'vue'
-import { Component, prop } from 'vue-property-decorator'
-import * as template from './modal.template.html'
+import Component from 'vue-class-component'
+import { Prop } from 'vue-property-decorator'
 
-@Component(template({}))
+import * as Template from './modal.html'
+
+@Template
+@Component
 export default class Modal extends Vue {
-  @prop({type: null})
-  title: string
+  @Prop readonly title: string
 
   close() {
     this.$emit('close')
