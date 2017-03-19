@@ -11,25 +11,25 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.5",
-    "dexie": "^2.0.0-beta.6",
-    "tslib": "^1.2.0",
-    "vue": "^2.1.4",
-    "vue-class-component": "^4.3.1",
-    "vue-property-decorator": "^3.2.0",
-    "vue-router": "^2.1.1",
-    "vuex": "^2.0.0"
+    "bootstrap": "4.0.0-alpha.5",
+    "dexie": "^2.0.0-beta",
+    "tslib": "^1.6.0",
+    "vue": "^2.2.4",
+    "vue-class-component": "^5.0.0",
+    "vue-property-decorator": "^4.0.0",
+    "vue-router": "^2.3.0",
+    "vuex": "^2.2.1"
   },
   "devDependencies": {
-    "css-loader": "^0.26.0",
-    "extract-text-webpack-plugin": "^2.0.0-beta.4",
-    "html-webpack-plugin": "^2.24.1",
-    "node-sass": "^3.13.0",
-    "sass-loader": "^4.0.2",
-    "ts-loader": "^1.2.2",
-    "typescript": "^2.1.1",
-    "vue-template-compiler": "^2.1.4",
-    "vue-template-loader": "^0.1.2",
-    "webpack": "^2.1.0-beta.27"
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "ts-loader": "^2.0.2",
+    "typescript": "^2.2.1",
+    "vue-template-compiler": "^2.2.4",
+    "vue-template-loader": "^0.2.4",
+    "webpack": "^2.2.1"
   }
 }
