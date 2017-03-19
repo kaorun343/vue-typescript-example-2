@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 import { Component, prop } from 'vue-property-decorator'
 import * as template from './alert.template.html'
 

@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 import Component from 'vue-class-component'
 import * as template from './index.template.html'
 import router from './router'
